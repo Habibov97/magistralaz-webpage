@@ -1,5 +1,4 @@
 "use client"
-
 import React, { useState } from "react";
 import { FaqTypes } from "../_types/faq.types";
 
@@ -9,7 +8,6 @@ const Accordion = ({ title, answer }: FaqTypes) => {
   function handleAccordionToggle(){
     setAccordionOpen(!accordionOpen)
   }
-
 
   return (
     <div className="py-2">

@@ -11,7 +11,7 @@ export default function Page() {
         <section className={`${montserrat.className} px-[5vw] bg-[url(/bg-section-layout.svg)] bg-center bg-cover bg-fixed relative`}>
             {/* Gradient Overlay for better text visibility */}
             <div className="w-full max-w-[1400px] min-h-screen mx-auto flex flex-col lg:flex-row justify-center items-start">
-                <div className="w-full max-w-[900px] mx-auto flex flex-col  rounded-2xl px-5">
+                <div className="w-full max-w-[900px] mx-auto flex flex-col  rounded-2xl p-5">
                     {/* Heading */}
                     <Heading title="Haqqımızda" subtitle="Artıq 5 ildən çoxdurki fəaliyyət göstərən professional sürücülük kursuyuq!"/>
                     <p 

@@ -51,7 +51,7 @@ function Navbar() {
 
       {/* Mobile view */}
       <div
-        className={`fixed top-0 right-0 h-full w-full bg-black/95 z-50 transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-full w-full bg-black z-50 transform transition-transform duration-300 ${
           drawerOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

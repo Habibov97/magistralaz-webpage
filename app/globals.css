@@ -16,3 +16,31 @@
 
 }
 
+/* statistic scroll style */
+.custom-scroll {
+  -webkit-overflow-scrolling: touch; 
+  overflow-x: auto; 
+  scroll-snap-type: x mandatory; 
+  display: flex; 
+}
+
+.custom-scroll::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2); 
+  border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-button {
+  display: none;
+}
+
+.custom-scroll > * {
+  scroll-snap-align: start; 
+}

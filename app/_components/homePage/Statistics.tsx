@@ -12,7 +12,7 @@ export default function Statistics() {
         <section className={`${lato.className} relative px-[5vw] bg-purple-200 overflow-hidden`}>
             {/* Content Wrapper */}
            
-                <div className="relative w-full max-w-[1400px] mx-auto py-[50px] flex justify-between items-center gap-12 overflow-x-scroll">
+                <div className="relative w-full max-w-[1400px] mx-auto py-[50px] flex justify-between items-center gap-12 custom-scroll">
                     {statistics.map((stat: StatisticTypes) => (
                          <Suspense fallback={<Loading/>} key={stat.id}>
                              <Statistic key={stat.id} {...stat} />

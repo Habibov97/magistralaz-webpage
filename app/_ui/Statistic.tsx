@@ -1,5 +1,4 @@
 "use client";
-import { Suspense } from "react";
 import { StatisticTypes } from "../_types/statistic.types";
 import AnimatedCounter from "./AnimatedCounter";
 
@@ -14,10 +13,9 @@ export default function Statistic({id,title, desc}: StatisticTypes) {
         ? 
         <span>{title}</span> 
         : 
-        <Suspense fallback={<span>{title}</span>}>
           <AnimatedCounter from={0} to={title} /> 
-        </Suspense>
-      }</span> 
+        }
+        </span> 
       <span className={`${id === 3 ? "text-6xl": "text-7xl"}  font-extrabold text-gray-600 drop-shadow-md`}>{id === 1 || id === 3 ? "+" : id === 2 ? "%"  : id === 4 ? "%" : ""}</span>
       </div>
         
