@@ -33,7 +33,8 @@ export default function BlogMaterials({ title, videos }: BlogMaterialsProps) {
 
   return (
     <div className="flex flex-col gap-5">
-      <h4 className="text-white font-bold text-2xl md:text-3xl">{title}</h4>
+      <h4 className="text-white font-bold text-2xl md:text-3xl border-b border-stone-400 pb-3">{title}</h4>
+      
       <div className="grid gap-10 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {videos.map((video) => (
           <div key={video.id} className="relative max-w-[550px] min-h-[270px] p-4 backdrop-blur-2xl bg-white/10 rounded-xl border border-stone-400/50 shadow-2xl shadow-black/50">
@@ -43,16 +44,19 @@ export default function BlogMaterials({ title, videos }: BlogMaterialsProps) {
             >
               <Image
                 className="rounded-xl object-cover w-full h-full"
-                src="/stockImg1.jpg" 
+                src="/stockImg2.jpg"
                 alt="Video thumbnail"
-                width={550}  
-                height={270}  
+                width={550}
+                height={270}
               />
               {/* Play button centered on image */}
-              <span className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-5xl bg-white rounded-lg text-red-600">
-                <FaYoutube />
+              <span className="absolute z-40 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 font-bold text-5xl p-2 rounded-full bg-red-600">
+                <FaYoutube className="text-white" />
               </span>
             </button>
+
+
+
           </div>
         ))}
       </div>
