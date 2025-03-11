@@ -78,34 +78,34 @@ function NavLinks({
 
   return (
     <>
-      <Link href="/" onClick={onClick} className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full`}>
+      <Link href="/" onClick={onClick} className={`relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full tracking-wider`}>
         Ana səhifə
       </Link>
       <Link
         href="/about"
         onClick={onClick}
-        className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full`}
+        className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full tracking-wider`}
       >
         Haqqımızda
       </Link>
       <Link
         href="/blog"
         onClick={onClick}
-        className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full`}
+        className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full tracking-wider`}
       >
         Blog
       </Link>
       <Link
         href="/contact"
         onClick={onClick}
-        className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full`}
+        className={` relative py-1 after:absolute after:bottom-0 after:left-0 after:h-[2px] after:w-0 after:bg-orange-300 after:transition-all after:duration-300 hover:after:w-full tracking-wider`}
       >
         Əlaqə
       </Link>
       <Link
         href="tel:0777176699"
         onClick={onClick}
-        className={` flex items-center gap-2 rounded-sm border border-solid border-white px-5 py-4 transition-all duration-300 outline-none hover:bg-white hover:text-black active:bg-white active:text-black`}
+        className={` flex items-center gap-2 rounded-sm border border-solid border-white px-5 py-4 transition-all duration-300 outline-none hover:bg-white hover:text-black active:bg-white active:text-black tracking-wider`}
       >
       <LuPhone className="text-2xl" />  077-717-66-99
       </Link>

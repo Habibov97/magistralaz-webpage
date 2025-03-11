@@ -1,6 +1,6 @@
 import AOSProvider from "@/app/_components/AOSProvider/AosProvides";
 import type { Metadata } from "next";
-import { Lato, Montserrat } from 'next/font/google';
+import { Goldman, Lato, Montserrat } from 'next/font/google';
 import React from "react";
 import Footer from "./_components/footer/Footer";
 import Header from "./_components/header/Header";
@@ -10,6 +10,7 @@ import ScrollToTop from "./_ui/ScrollToTop";
 import "./globals.css";
 
 
+export const goldman = Goldman({ weight: '400', subsets: ['latin'], display:"swap" });
 export const lato = Lato({ weight: '400', subsets: ['latin'], display:"swap" });
 export const montserrat = Montserrat({ weight: '400', subsets: ['latin'], display:"swap" });
 
@@ -31,8 +32,9 @@ export default function RootLayout({
     <html lang="en">
       <AOSProvider>
         <body className={`${montserrat.className} #antialiased`} cz-shortcut-listen="true">
-          
-          <Navbar />
+          <div className={`${goldman.className}`}>
+            <Navbar />
+          </div>
 
           <Header>
             <HeroClient />
